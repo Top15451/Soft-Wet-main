@@ -17,6 +17,9 @@ public class InitSounds {
     public static final RegistryObject<SoundEvent> JOSUKE_SOFT_AND_WET = SOUNDS.register("josuke_soft_and_wet",
             () -> new SoundEvent(new ResourceLocation(RotpSoftAndWet.MOD_ID, "josuke_soft_and_wet")));
 
+    public static final RegistryObject<SoundEvent> JOSUKE_PUNCH_HEAVY = SOUNDS.register("josuke_punch_heavy",
+            () -> new SoundEvent(new ResourceLocation(RotpSoftAndWet.MOD_ID, "josuke_punch_heavy")));
+
     public static final RegistryObject<SoundEvent> JOSUKE_BUBBLE_SHOOT = SOUNDS.register("josuke_bubble_shoot",
             () -> new SoundEvent(new ResourceLocation(RotpSoftAndWet.MOD_ID, "josuke_bubble_shoot")));
 
@@ -28,6 +31,12 @@ public class InitSounds {
 
     public static final Supplier<SoundEvent> SOFT_AND_WET_BUBBLES = SOUNDS.register("soft_and_wet_bubbles",
             ()->new SoundEvent(new ResourceLocation(RotpSoftAndWet.MOD_ID,"soft_and_wet_bubbles")));
+
+    public static final Supplier<SoundEvent> SOFT_AND_WET_SHIELD_UNSUMMON = SOUNDS.register("soft_and_wet_shield_unsummon",
+            ()->new SoundEvent(new ResourceLocation(RotpSoftAndWet.MOD_ID,"soft_and_wet_shield_unsummon")));
+
+    public static final Supplier<SoundEvent> SOFT_AND_WET_SHIELD = SOUNDS.register("soft_and_wet_shield",
+            ()->new SoundEvent(new ResourceLocation(RotpSoftAndWet.MOD_ID,"soft_and_wet_shield")));
 
     public static final Supplier<SoundEvent> SOFT_AND_WET_PUNCH_LIGHT = SOUNDS.register("soft_and_wet_punch",
             ()->new SoundEvent(new ResourceLocation(RotpSoftAndWet.MOD_ID,"soft_and_wet_punch")));

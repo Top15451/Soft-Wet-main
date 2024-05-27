@@ -1,10 +1,18 @@
 {
-  "entity.rotp_sw.soft_and_wet": "Soft And Wet",
-  "stand.rotp_sw.soft_and_wet": "Soft And Wet",
+  "entity.rotp_sw.soft_and_wet": "Soft-and-Wet",
+  "stand.rotp_sw.soft_and_wet": "Soft-and-Wet",
   "action.rotp_sw.soft_and_wet_punch": "Punch",
   "action.rotp_sw.soft_and_wet_heavy_punch": "Heavy Punch",
+  "action.rotp_sw.soft_and_wet_combo_punch": "Combo-Punch",
   "action.rotp_sw.soft_and_wet_barrage": "Barrage",
   "action.rotp_sw.soft_and_wet_block": "Block",
   "action.rotp_sw.soft_and_wet_bubbles": "Bubbles Shoot",
-  "rotp_sw.subtitle.soft_and_wet_name": "\"Soft And Wet\""
+  "action.rotp_sw.soft_and_wet_bubble_blind": "Vision-Plundering Bubble Shoot",
+  "action.rotp_sw.soft_and_wet_bubble_stun": "Bubble Shot Eliminating Friction",
+  "action.rotp_sw.soft_and_wet_bubble_explosion": "Bubble Explosion Shoot",
+  "action.rotp_sw.soft_and_wet_bubble_shield": "Bubble Shield",
+  "action.rotp_sw.soft_and_wet_bubble_shield_levitation": "Bubble Shield Levitation",
+  "action.rotp_sw.soft_and_wet_bubble_wall": "Bubble Wall",
+  "action.rotp_sw.soft_and_wet_go_beyond": "Soft-and-Wet, Go Beyond!",
+  "rotp_sw.subtitle.soft_and_wet_name": "\"Soft-and-Wet\""
 }

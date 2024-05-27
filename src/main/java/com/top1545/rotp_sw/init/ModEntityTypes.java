@@ -1,6 +1,7 @@
 package com.top1545.rotp_sw.init;
 
 import com.top1545.rotp_sw.RotpSoftAndWet;
+import com.top1545.rotp_sw.entity.damaging.projectile.SoftAndWetBubbleBlindEntity;
 import com.top1545.rotp_sw.entity.damaging.projectile.SoftAndWetBubbleEntity;
 
 import net.minecraft.entity.EntityClassification;

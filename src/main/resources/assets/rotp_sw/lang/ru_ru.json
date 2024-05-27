@@ -1,0 +1,18 @@
+{
+  "entity.rotp_sw.soft_and_wet": "Soft-and-Wet",
+  "stand.rotp_sw.soft_and_wet": "Soft-and-Wet",
+  "action.rotp_sw.soft_and_wet_punch": "Удар",
+  "action.rotp_sw.soft_and_wet_heavy_punch": "Тяжёлый Удар",
+  "action.rotp_sw.soft_and_wet_combo_punch": "Комбо-Уудар",
+  "action.rotp_sw.soft_and_wet_barrage": "Шквал Ударов",
+  "action.rotp_sw.soft_and_wet_block": "Блокирование",
+  "action.rotp_sw.soft_and_wet_bubbles": "Пузырьковый Выстрел",
+  "action.rotp_sw.soft_and_wet_bubble_blind": "Пузырьковый Выстрел, Лишающий Зрения",
+  "action.rotp_sw.soft_and_wet_bubble_stun": "Пузырьковый выстрел, Лишающий Трения",
+  "action.rotp_sw.soft_and_wet_bubble_explosion": "Взрывной Пузырьковый Выстрел",
+  "action.rotp_sw.soft_and_wet_bubble_shield": "Пузырьковый Щит",
+  "action.rotp_sw.soft_and_wet_bubble_shield_levitation": "Левитация Пузырькового Щита",
+  "action.rotp_sw.soft_and_wet_bubble_wall": "Пузырьковая Стена",
+  "action.rotp_sw.soft_and_wet_go_beyond": "Soft-and-Wet, Go Beyond!",
+  "rotp_sw.subtitle.soft_and_wet_name": "\"Soft-and-Wet\""
+}

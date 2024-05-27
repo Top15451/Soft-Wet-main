@@ -30,145 +30,151 @@ public class SoftAndWetModel extends HumanoidStandModel<SoftAndWetEntity> {
 
 		head.texOffs(0, 0).addBox(-4.0F, -7.8F, -4.0F, 8.0F, 8.0F, 8.0F, -0.2F, false);
 		head.texOffs(0, 16).addBox(-4.0F, -7.62F, -4.0F, 8.0F, 8.0F, 8.0F, -0.4F, false);
-		head.texOffs(29, 55).addBox(-2.0F, -5.0F, -4.4F, 1.0F, 2.0F, 1.0F, -0.1F, false);
-		head.texOffs(39, 8).addBox(-3.0F, -5.0F, -4.4F, 1.0F, 2.0F, 1.0F, -0.1F, false);
-		head.texOffs(31, 60).addBox(-3.0F, -5.0F, -4.2F, 2.0F, 2.0F, 1.0F, -0.1F, false);
-		head.texOffs(49, 52).addBox(2.0F, -5.0F, -4.4F, 1.0F, 2.0F, 1.0F, -0.1F, false);
-		head.texOffs(0, 38).addBox(1.0F, -5.0F, -4.4F, 1.0F, 2.0F, 1.0F, -0.1F, false);
-		head.texOffs(12, 59).addBox(1.0F, -5.0F, -4.2F, 2.0F, 2.0F, 1.0F, -0.1F, false);
-		head.texOffs(43, 52).addBox(-4.5F, -6.0F, -2.0F, 1.0F, 4.0F, 4.0F, -0.2F, false);
-		head.texOffs(52, 22).addBox(3.5F, -6.0F, -2.0F, 1.0F, 4.0F, 4.0F, -0.2F, false);
+		head.texOffs(53, 15).addBox(-2.0F, -5.0F, -4.4F, 1.0F, 2.0F, 1.0F, -0.1F, false);
+		head.texOffs(0, 38).addBox(-3.0F, -5.0F, -4.4F, 1.0F, 2.0F, 1.0F, -0.1F, false);
+		head.texOffs(46, 10).addBox(-3.0F, -5.0F, -4.2F, 2.0F, 2.0F, 1.0F, -0.1F, false);
+		head.texOffs(6, 52).addBox(2.0F, -5.0F, -4.4F, 1.0F, 2.0F, 1.0F, -0.1F, false);
+		head.texOffs(24, 16).addBox(1.0F, -5.0F, -4.4F, 1.0F, 2.0F, 1.0F, -0.1F, false);
+		head.texOffs(20, 43).addBox(1.0F, -5.0F, -4.2F, 2.0F, 2.0F, 1.0F, -0.1F, false);
+		head.texOffs(54, 51).addBox(-4.5F, -6.0F, -2.0F, 1.0F, 4.0F, 4.0F, -0.2F, false);
+		head.texOffs(34, 54).addBox(3.5F, -6.0F, -2.0F, 1.0F, 4.0F, 4.0F, -0.2F, false);
 
 		head_r1 = new ModelRenderer(this);
 		head_r1.setPos(0.0F, 24.0F, 0.0F);
 		head.addChild(head_r1);
 		setRotationAngle(head_r1, 0.0F, 0.0F, -0.0436F);
-		head_r1.texOffs(54, 30).addBox(5.0F, -29.0F, -1.0F, 4.0F, 2.0F, 2.0F, -0.2F, false);
+		head_r1.texOffs(58, 33).addBox(5.0F, -29.0F, -1.0F, 4.0F, 2.0F, 2.0F, -0.2F, false);
 
 		head_r2 = new ModelRenderer(this);
 		head_r2.setPos(0.0F, 24.0F, 0.0F);
 		head.addChild(head_r2);
 		setRotationAngle(head_r2, 0.0F, 0.0F, 0.0436F);
-		head_r2.texOffs(10, 55).addBox(-9.0F, -29.0F, -1.0F, 4.0F, 2.0F, 2.0F, -0.2F, false);
+		head_r2.texOffs(58, 40).addBox(-9.0F, -29.0F, -1.0F, 4.0F, 2.0F, 2.0F, -0.2F, false);
 
-		torso.texOffs(0, 32).addBox(4.0F, 3.0F, -2.0F, 1.0F, 3.0F, 1.0F, 0.0F, false);
-		torso.texOffs(24, 16).addBox(-5.0F, 3.0F, -2.0F, 1.0F, 3.0F, 1.0F, 0.0F, false);
-		torso.texOffs(33, 50).addBox(-5.0F, 0.0F, -2.0F, 4.0F, 1.0F, 3.0F, 0.0F, false);
-		torso.texOffs(22, 51).addBox(1.0F, 0.0F, -2.0F, 4.0F, 1.0F, 3.0F, 0.0F, false);
-		torso.texOffs(44, 33).addBox(-3.0F, 3.0F, -2.0F, 1.0F, 2.0F, 1.0F, 0.0F, false);
-		torso.texOffs(22, 43).addBox(1.0F, 3.0F, -2.0F, 1.0F, 2.0F, 1.0F, 0.0F, false);
-		torso.texOffs(42, 26).addBox(-2.0F, 3.0F, -2.0F, 1.0F, 2.0F, 1.0F, 0.0F, false);
-		torso.texOffs(37, 43).addBox(2.0F, 3.0F, -2.0F, 1.0F, 2.0F, 1.0F, 0.0F, false);
-		torso.texOffs(24, 0).addBox(-5.0F, 0.02F, -1.0F, 10.0F, 6.0F, 2.0F, -0.01F, false);
-		torso.texOffs(0, 54).addBox(1.0F, 0.0F, 1.0F, 4.0F, 6.0F, 1.0F, 0.0F, false);
-		torso.texOffs(53, 52).addBox(-5.0F, 0.0F, 1.0F, 4.0F, 6.0F, 1.0F, 0.0F, false);
+		torso.texOffs(20, 62).addBox(4.0F, 1.0F, -2.0F, 1.0F, 5.0F, 1.0F, 0.0F, false);
+		torso.texOffs(10, 62).addBox(-5.0F, 1.0F, -2.0F, 1.0F, 5.0F, 1.0F, 0.0F, false);
+		torso.texOffs(32, 22).addBox(-5.0F, 0.0F, -2.0F, 4.0F, 1.0F, 3.0F, 0.0F, false);
+		torso.texOffs(52, 0).addBox(1.0F, 0.0F, -2.0F, 4.0F, 1.0F, 3.0F, 0.0F, false);
+		torso.texOffs(0, 46).addBox(-3.0F, 3.0F, -2.0F, 1.0F, 2.0F, 1.0F, 0.0F, false);
+		torso.texOffs(43, 22).addBox(1.0F, 3.0F, -2.0F, 1.0F, 2.0F, 1.0F, 0.0F, false);
+		torso.texOffs(41, 2).addBox(-2.0F, 3.0F, -2.0F, 1.0F, 2.0F, 1.0F, 0.0F, false);
+		torso.texOffs(44, 28).addBox(2.0F, 3.0F, -2.0F, 1.0F, 2.0F, 1.0F, 0.0F, false);
+		torso.texOffs(29, 13).addBox(-4.5F, 0.02F, -1.5F, 9.0F, 6.0F, 3.0F, 0.0F, false);
+		torso.texOffs(20, 55).addBox(1.0F, 0.0F, 1.0F, 4.0F, 6.0F, 1.0F, 0.0F, false);
+		torso.texOffs(10, 55).addBox(-5.0F, 0.0F, 1.0F, 4.0F, 6.0F, 1.0F, 0.0F, false);
 		torso.texOffs(0, 32).addBox(-3.0F, 11.0F, -2.0F, 6.0F, 2.0F, 4.0F, 0.0F, false);
-		torso.texOffs(36, 43).addBox(-1.0F, 11.0F, -3.0F, 2.0F, 2.0F, 5.2F, 0.1F, false);
-		torso.texOffs(59, 2).addBox(-3.9F, 11.1F, -1.5F, 1.0F, 2.0F, 3.0F, -0.1F, false);
-		torso.texOffs(58, 19).addBox(2.9F, 11.1F, -1.5F, 1.0F, 2.0F, 3.0F, -0.1F, false);
-		torso.texOffs(14, 41).addBox(-1.0F, 0.0F, -1.0F, 2.0F, 12.0F, 2.0F, -0.1F, false);
-		torso.texOffs(53, 10).addBox(-1.5F, 9.9F, -1.5F, 3.0F, 1.0F, 3.0F, -0.3F, false);
-		torso.texOffs(60, 14).addBox(1.5F, 6.0F, -2.0F, 2.0F, 3.0F, 1.0F, 0.0F, false);
-		torso.texOffs(0, 48).addBox(0.5F, 7.0F, -2.0F, 1.0F, 2.0F, 1.0F, 0.0F, false);
-		torso.texOffs(45, 45).addBox(-1.5F, 7.0F, -2.0F, 1.0F, 2.0F, 1.0F, 0.0F, false);
-		torso.texOffs(32, 12).addBox(-3.5F, 6.0F, -2.0F, 2.0F, 3.0F, 1.0F, 0.0F, false);
-		torso.texOffs(57, 20).addBox(-4.0F, 5.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-		torso.texOffs(20, 55).addBox(-5.0F, 1.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-		torso.texOffs(40, 54).addBox(-3.0F, 1.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-		torso.texOffs(48, 37).addBox(-2.5F, 2.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-		torso.texOffs(48, 2).addBox(1.5F, 2.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-		torso.texOffs(39, 18).addBox(-0.5F, 1.5F, -1.9F, 1.0F, 2.0F, 1.0F, 0.1F, false);
-		torso.texOffs(54, 34).addBox(2.0F, 1.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-		torso.texOffs(49, 10).addBox(4.0F, 1.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-		torso.texOffs(56, 48).addBox(3.0F, 5.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-		torso.texOffs(52, 59).addBox(0.5F, 6.0F, 1.0F, 3.0F, 3.0F, 1.0F, 0.0F, false);
+		torso.texOffs(0, 38).addBox(-1.0F, 10.2F, -2.8F, 2.0F, 3.0F, 5.0F, 0.1F, false);
+		torso.texOffs(24, 19).addBox(-4.1F, 11.0F, -1.5F, 1.0F, 2.0F, 3.0F, 0.1F, false);
+		torso.texOffs(0, 16).addBox(3.1F, 11.0F, -1.5F, 1.0F, 2.0F, 3.0F, 0.1F, false);
+		torso.texOffs(0, 0).addBox(-1.0F, 5.8F, -1.0F, 2.0F, 4.0F, 2.0F, 0.0F, false);
+		torso.texOffs(14, 62).addBox(1.5F, 6.0F, -2.0F, 2.0F, 3.0F, 1.0F, 0.0F, false);
+		torso.texOffs(44, 49).addBox(0.5F, 7.0F, -2.0F, 1.0F, 2.0F, 1.0F, 0.0F, false);
+		torso.texOffs(48, 40).addBox(-1.5F, 7.0F, -2.0F, 1.0F, 2.0F, 1.0F, 0.0F, false);
+		torso.texOffs(62, 4).addBox(-3.5F, 6.0F, -2.0F, 2.0F, 3.0F, 1.0F, 0.0F, false);
+		torso.texOffs(52, 4).addBox(-4.0F, 5.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		torso.texOffs(48, 45).addBox(-3.0F, 1.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		torso.texOffs(47, 0).addBox(-2.5F, 2.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		torso.texOffs(0, 41).addBox(1.5F, 2.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		torso.texOffs(16, 38).addBox(-0.5F, 1.5F, -1.9F, 1.0F, 2.0F, 1.0F, 0.1F, false);
+		torso.texOffs(48, 37).addBox(2.0F, 1.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		torso.texOffs(51, 0).addBox(3.0F, 5.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		torso.texOffs(43, 61).addBox(0.5F, 6.0F, 1.0F, 3.0F, 3.0F, 1.0F, 0.0F, false);
 		torso.texOffs(16, 32).addBox(-3.5F, 6.0F, 1.0F, 3.0F, 3.0F, 1.0F, 0.0F, false);
-		torso.texOffs(10, 38).addBox(-2.0F, 7.2F, -0.5F, 4.0F, 1.0F, 1.0F, -0.2F, false);
-		torso.texOffs(24, 22).addBox(-2.0F, 8.4F, -0.5F, 4.0F, 1.0F, 1.0F, -0.2F, false);
-		torso.texOffs(45, 60).addBox(1.0F, 7.8F, -0.5F, 1.0F, 1.0F, 1.0F, -0.2F, false);
-		torso.texOffs(41, 60).addBox(-2.0F, 7.8F, -0.5F, 1.0F, 1.0F, 1.0F, -0.2F, false);
+		torso.texOffs(24, 6).addBox(-2.5F, 8.2F, -0.5F, 5.0F, 1.0F, 1.0F, -0.2F, false);
+		torso.texOffs(0, 32).addBox(1.5F, 8.8F, -0.5F, 1.0F, 3.0F, 1.0F, -0.2F, false);
+		torso.texOffs(24, 0).addBox(-2.5F, 8.8F, -0.5F, 1.0F, 3.0F, 1.0F, -0.2F, false);
 
 		torso_r1 = new ModelRenderer(this);
 		torso_r1.setPos(0.0F, 24.0F, 0.0F);
 		torso.addChild(torso_r1);
-		setRotationAngle(torso_r1, 0.0F, 0.0F, -0.0873F);
-		torso_r1.texOffs(0, 0).addBox(4.7F, -12.54F, -1.5F, 1.0F, 4.0F, 3.0F, -0.1F, false);
+		setRotationAngle(torso_r1, 0.0F, 0.0F, -0.1745F);
+		torso_r1.texOffs(0, 52).addBox(5.7F, -12.3F, -2.0F, 1.0F, 4.0F, 4.0F, -0.2F, false);
 
 		torso_r2 = new ModelRenderer(this);
 		torso_r2.setPos(0.0F, 24.0F, 0.0F);
 		torso.addChild(torso_r2);
-		setRotationAngle(torso_r2, 0.0F, 0.0F, 0.0873F);
-		torso_r2.texOffs(0, 16).addBox(-5.7F, -12.54F, -1.5F, 1.0F, 4.0F, 3.0F, -0.1F, false);
+		setRotationAngle(torso_r2, 0.0F, 0.0F, 0.1745F);
+		torso_r2.texOffs(54, 15).addBox(-7.0F, -12.3F, -2.0F, 1.0F, 4.0F, 4.0F, -0.2F, false);
 
-		leftArm.texOffs(39, 8).addBox(-1.0F, -2.0F, -2.0F, 3.0F, 6.0F, 4.0F, 0.0F, false);
-		leftArm.texOffs(10, 40).addBox(1.5F, 2.2F, -0.5F, 2.0F, 1.0F, 1.0F, -0.1F, false);
-		leftArm.texOffs(58, 0).addBox(2.5F, 3.0F, -0.5F, 1.0F, 2.0F, 1.0F, -0.1F, false);
-		leftArm.texOffs(50, 19).addBox(0.5F, 4.8F, -0.5F, 3.0F, 1.0F, 1.0F, -0.1F, false);
+		leftArm.texOffs(34, 33).addBox(-1.0F, -2.0F, -2.0F, 3.0F, 6.0F, 4.0F, 0.0F, false);
+		leftArm.texOffs(41, 0).addBox(1.5F, 2.2F, -0.5F, 2.0F, 1.0F, 1.0F, -0.1F, false);
+		leftArm.texOffs(54, 23).addBox(2.5F, 3.0F, -0.5F, 1.0F, 2.0F, 1.0F, -0.1F, false);
+		leftArm.texOffs(0, 6).addBox(0.5F, 4.8F, -0.5F, 3.0F, 1.0F, 1.0F, -0.1F, false);
 
 		leftArm_r1 = new ModelRenderer(this);
 		leftArm_r1.setPos(-6.0F, 22.0F, 0.0F);
 		leftArm.addChild(leftArm_r1);
 		setRotationAngle(leftArm_r1, 0.0F, 0.0F, 0.0873F);
-		leftArm_r1.texOffs(24, 16).addBox(3.0F, -25.0F, -2.5F, 5.0F, 1.0F, 5.0F, -0.3F, false);
+		leftArm_r1.texOffs(24, 0).addBox(2.0F, -25.0F, -2.5F, 6.0F, 1.0F, 5.0F, -0.3F, false);
 
-		leftArmJoint.texOffs(56, 42).addBox(-0.5F, -1.5F, -1.5F, 2.0F, 3.0F, 3.0F, -0.1F, false);
+		leftArmJoint.texOffs(60, 49).addBox(-0.5F, -0.5F, -1.5F, 2.0F, 2.0F, 3.0F, -0.1F, false);
 
-		leftForeArm.texOffs(0, 48).addBox(-1.0F, 4.0F, -2.0F, 3.0F, 2.0F, 4.0F, 0.0F, false);
-		leftForeArm.texOffs(42, 26).addBox(-1.0F, 1.0F, -2.0F, 3.0F, 2.0F, 4.0F, 0.0F, false);
-		leftForeArm.texOffs(60, 61).addBox(1.3F, 4.4F, 1.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
-		leftForeArm.texOffs(48, 61).addBox(1.3F, 4.4F, -1.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
-		leftForeArm.texOffs(27, 61).addBox(1.3F, 4.4F, 0.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
-		leftForeArm.texOffs(23, 61).addBox(1.3F, 4.4F, -2.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
-		leftForeArm.texOffs(32, 8).addBox(-0.5F, 3.0F, -1.5F, 2.0F, 1.0F, 3.0F, 0.0F, false);
+		leftForeArm.texOffs(0, 46).addBox(-1.0F, 4.0F, -2.0F, 3.0F, 2.0F, 4.0F, 0.0F, false);
+		leftForeArm.texOffs(38, 43).addBox(-1.0F, 1.0F, -2.0F, 3.0F, 2.0F, 4.0F, 0.0F, false);
+		leftForeArm.texOffs(50, 55).addBox(1.3F, 4.4F, 1.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
+		leftForeArm.texOffs(44, 55).addBox(1.3F, 4.4F, -1.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
+		leftForeArm.texOffs(34, 55).addBox(1.3F, 4.4F, 0.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
+		leftForeArm.texOffs(30, 55).addBox(1.3F, 4.4F, -2.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
+		leftForeArm.texOffs(60, 15).addBox(-0.5F, 3.0F, -1.5F, 2.0F, 1.0F, 3.0F, 0.0F, false);
 
-		rightArm.texOffs(0, 38).addBox(-2.0F, -2.0F, -2.0F, 3.0F, 6.0F, 4.0F, 0.0F, false);
-		rightArm.texOffs(46, 0).addBox(-3.5F, 2.2F, -0.5F, 2.0F, 1.0F, 1.0F, -0.1F, false);
-		rightArm.texOffs(55, 40).addBox(-3.5F, 4.8F, -0.5F, 3.0F, 1.0F, 1.0F, -0.1F, false);
-		rightArm.texOffs(37, 60).addBox(-3.5F, 3.0F, -0.5F, 1.0F, 2.0F, 1.0F, -0.1F, false);
+		rightArm.texOffs(20, 33).addBox(-2.0F, -2.0F, -2.0F, 3.0F, 6.0F, 4.0F, 0.0F, false);
+		rightArm.texOffs(44, 35).addBox(-3.5F, 2.2F, -0.5F, 2.0F, 1.0F, 1.0F, -0.1F, false);
+		rightArm.texOffs(0, 21).addBox(-3.5F, 4.8F, -0.5F, 3.0F, 1.0F, 1.0F, -0.1F, false);
+		rightArm.texOffs(40, 54).addBox(-3.5F, 3.0F, -0.5F, 1.0F, 2.0F, 1.0F, -0.1F, false);
 
 		rightArm_r1 = new ModelRenderer(this);
 		rightArm_r1.setPos(6.0F, 22.0F, 0.0F);
 		rightArm.addChild(rightArm_r1);
 		setRotationAngle(rightArm_r1, 0.0F, 0.0F, -0.0873F);
-		rightArm_r1.texOffs(27, 27).addBox(-8.0F, -25.0F, -2.5F, 5.0F, 1.0F, 5.0F, -0.3F, false);
+		rightArm_r1.texOffs(27, 27).addBox(-8.0F, -25.0F, -2.5F, 6.0F, 1.0F, 5.0F, -0.3F, false);
 
-		rightArmJoint.texOffs(55, 34).addBox(-1.5F, -1.5F, -1.5F, 2.0F, 3.0F, 3.0F, -0.1F, false);
+		rightArmJoint.texOffs(0, 60).addBox(-1.5F, -0.5F, -1.5F, 2.0F, 2.0F, 3.0F, -0.1F, false);
 
-		rightForeArm.texOffs(46, 46).addBox(-2.0F, 4.0F, -2.0F, 3.0F, 2.0F, 4.0F, 0.0F, false);
-		rightForeArm.texOffs(45, 39).addBox(-2.0F, 1.0F, -2.0F, 3.0F, 2.0F, 4.0F, 0.0F, false);
-		rightForeArm.texOffs(62, 11).addBox(-2.3F, 4.4F, 1.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
-		rightForeArm.texOffs(62, 9).addBox(-2.3F, 4.4F, 0.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
-		rightForeArm.texOffs(3, 62).addBox(-2.3F, 4.4F, -2.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
-		rightForeArm.texOffs(62, 0).addBox(-2.3F, 4.4F, -1.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
-		rightForeArm.texOffs(32, 23).addBox(-1.5F, 3.0F, -1.5F, 2.0F, 1.0F, 3.0F, 0.0F, false);
+		rightForeArm.texOffs(45, 29).addBox(-2.0F, 4.0F, -2.0F, 3.0F, 2.0F, 4.0F, 0.0F, false);
+		rightForeArm.texOffs(44, 22).addBox(-2.0F, 1.0F, -2.0F, 3.0F, 2.0F, 4.0F, 0.0F, false);
+		rightForeArm.texOffs(50, 57).addBox(-2.3F, 4.4F, 1.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
+		rightForeArm.texOffs(44, 57).addBox(-2.3F, 4.4F, 0.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
+		rightForeArm.texOffs(56, 6).addBox(-2.3F, 4.4F, -2.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
+		rightForeArm.texOffs(56, 4).addBox(-2.3F, 4.4F, -1.0F, 1.0F, 1.0F, 1.0F, -0.1F, false);
+		rightForeArm.texOffs(61, 20).addBox(-1.5F, 3.0F, -1.5F, 2.0F, 1.0F, 3.0F, 0.0F, false);
 
-		leftLeg.texOffs(22, 43).addBox(-1.0F, 1.0F, -2.0F, 3.0F, 4.0F, 4.0F, 0.0F, false);
-		leftLeg.texOffs(44, 32).addBox(-1.0F, 4.0F, -2.0F, 3.0F, 1.0F, 4.0F, 0.1F, false);
+		leftLeg.texOffs(10, 42).addBox(-0.9F, 1.0F, -2.0F, 3.0F, 4.0F, 4.0F, 0.0F, false);
+		leftLeg.texOffs(10, 50).addBox(-0.9F, 4.0F, -2.0F, 3.0F, 1.0F, 4.0F, 0.1F, false);
 
-		leftLegJoint.texOffs(22, 55).addBox(-0.5F, -1.5F, -1.5F, 2.0F, 3.0F, 3.0F, -0.1F, false);
+		leftLegJoint.texOffs(51, 59).addBox(-0.4F, -1.0F, -1.5F, 2.0F, 2.0F, 3.0F, 0.2F, false);
 
-		leftLowerLeg.texOffs(34, 33).addBox(-1.0F, 0.0F, -2.0F, 3.0F, 6.0F, 4.0F, -0.001F, false);
-		leftLowerLeg.texOffs(49, 5).addBox(-1.0F, 0.0F, -2.0F, 3.0F, 1.0F, 4.0F, 0.08F, false);
-		leftLowerLeg.texOffs(60, 59).addBox(1.9F, 3.0F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-		leftLowerLeg.texOffs(58, 24).addBox(2.7F, 3.0F, -0.5F, 1.0F, 1.0F, 1.0F, -0.2F, false);
-		leftLowerLeg.texOffs(60, 48).addBox(0.1F, 3.0F, -2.5F, 1.0F, 1.0F, 1.0F, 0.1F, false);
+		leftLowerLeg.texOffs(24, 43).addBox(-0.9F, 1.0F, -2.0F, 3.0F, 3.0F, 4.0F, -0.001F, false);
+		leftLowerLeg.texOffs(26, 58).addBox(1.6F, 4.4F, -1.6F, 1.0F, 2.0F, 4.0F, -0.4F, false);
+		leftLowerLeg.texOffs(58, 59).addBox(-1.4F, 4.4F, 1.4F, 4.0F, 2.0F, 1.0F, -0.4F, false);
+		leftLowerLeg.texOffs(55, 24).addBox(-1.4F, 4.4F, -1.6F, 1.0F, 2.0F, 4.0F, -0.4F, false);
+		leftLowerLeg.texOffs(48, 45).addBox(-0.9F, 5.0F, -2.0F, 3.0F, 1.0F, 4.0F, -0.001F, false);
+		leftLowerLeg.texOffs(9, 38).addBox(-0.4F, 4.0F, -1.5F, 2.0F, 1.0F, 3.0F, 0.0F, false);
+		leftLowerLeg.texOffs(24, 50).addBox(-0.9F, 0.0F, -2.0F, 3.0F, 1.0F, 4.0F, 0.08F, false);
+		leftLowerLeg.texOffs(48, 35).addBox(-0.9F, 3.0F, -2.0F, 3.0F, 1.0F, 4.0F, 0.08F, false);
+		leftLowerLeg.texOffs(54, 50).addBox(1.9F, 3.0F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		leftLowerLeg.texOffs(10, 52).addBox(2.7F, 3.0F, -0.5F, 1.0F, 1.0F, 1.0F, -0.2F, false);
 		leftLowerLeg.texOffs(30, 33).addBox(0.1F, 0.6F, 0.5F, 1.0F, 1.0F, 3.0F, -0.1F, false);
-		leftLowerLeg.texOffs(15, 59).addBox(0.1F, -2.0F, 0.5F, 1.0F, 1.0F, 3.0F, -0.1F, false);
-		leftLowerLeg.texOffs(48, 5).addBox(0.1F, -1.2F, 2.5F, 1.0F, 2.0F, 1.0F, -0.1F, false);
+		leftLowerLeg.texOffs(61, 24).addBox(0.1F, -2.0F, 0.5F, 1.0F, 1.0F, 3.0F, -0.1F, false);
+		leftLowerLeg.texOffs(34, 50).addBox(0.1F, -1.2F, 2.5F, 1.0F, 2.0F, 1.0F, -0.1F, false);
 
-		rightLeg.texOffs(40, 18).addBox(-2.0F, 1.0F, -2.0F, 3.0F, 4.0F, 4.0F, 0.0F, false);
-		rightLeg.texOffs(48, 0).addBox(-2.0F, 4.0F, -2.0F, 3.0F, 1.0F, 4.0F, 0.1F, false);
+		rightLeg.texOffs(42, 2).addBox(-2.1F, 1.0F, -2.0F, 3.0F, 4.0F, 4.0F, 0.0F, false);
+		rightLeg.texOffs(50, 10).addBox(-2.1F, 4.0F, -2.0F, 3.0F, 1.0F, 4.0F, 0.1F, false);
 
-		rightLegJoint.texOffs(33, 54).addBox(-1.5F, -1.5F, -1.5F, 2.0F, 3.0F, 3.0F, -0.1F, false);
+		rightLegJoint.texOffs(59, 44).addBox(-1.6F, -1.0F, -1.5F, 2.0F, 2.0F, 3.0F, 0.2F, false);
 
-		rightLowerLeg.texOffs(20, 33).addBox(-2.0F, 0.0F, -2.0F, 3.0F, 6.0F, 4.0F, -0.001F, false);
-		rightLowerLeg.texOffs(50, 14).addBox(-2.0F, 0.0F, -2.0F, 3.0F, 1.0F, 4.0F, 0.08F, false);
-		rightLowerLeg.texOffs(0, 61).addBox(-3.7F, 3.0F, -0.5F, 1.0F, 1.0F, 1.0F, -0.2F, false);
-		rightLowerLeg.texOffs(59, 7).addBox(-2.9F, 3.0F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-		rightLowerLeg.texOffs(60, 50).addBox(-1.1F, 3.0F, -2.5F, 1.0F, 1.0F, 1.0F, 0.1F, false);
-		rightLowerLeg.texOffs(7, 59).addBox(-1.1F, 0.6F, 0.5F, 1.0F, 1.0F, 3.0F, -0.1F, false);
-		rightLowerLeg.texOffs(32, 43).addBox(-1.1F, -2.0F, 0.5F, 1.0F, 1.0F, 3.0F, -0.1F, false);
-		rightLowerLeg.texOffs(10, 48).addBox(-1.1F, -1.2F, 2.5F, 1.0F, 2.0F, 1.0F, -0.1F, false);
+		rightLowerLeg.texOffs(32, 6).addBox(-2.1F, 1.0F, -2.0F, 3.0F, 3.0F, 4.0F, -0.001F, false);
+		rightLowerLeg.texOffs(34, 49).addBox(-2.1F, 5.0F, -2.0F, 3.0F, 1.0F, 4.0F, -0.001F, false);
+		rightLowerLeg.texOffs(56, 4).addBox(-2.6F, 4.4F, -1.6F, 1.0F, 2.0F, 4.0F, -0.4F, false);
+		rightLowerLeg.texOffs(55, 30).addBox(-2.6F, 4.4F, 1.4F, 4.0F, 2.0F, 1.0F, -0.4F, false);
+		rightLowerLeg.texOffs(44, 55).addBox(0.4F, 4.4F, -1.6F, 1.0F, 2.0F, 4.0F, -0.4F, false);
+		rightLowerLeg.texOffs(60, 10).addBox(-1.6F, 4.0F, -1.5F, 2.0F, 1.0F, 3.0F, 0.0F, false);
+		rightLowerLeg.texOffs(44, 50).addBox(-2.1F, 0.0F, -2.0F, 3.0F, 1.0F, 4.0F, 0.08F, false);
+		rightLowerLeg.texOffs(48, 40).addBox(-2.1F, 3.0F, -2.0F, 3.0F, 1.0F, 4.0F, 0.08F, false);
+		rightLowerLeg.texOffs(54, 52).addBox(-3.7F, 3.0F, -0.5F, 1.0F, 1.0F, 1.0F, -0.2F, false);
+		rightLowerLeg.texOffs(32, 8).addBox(-3.0F, 3.0F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		rightLowerLeg.texOffs(20, 50).addBox(-1.1F, 0.6F, 0.5F, 1.0F, 1.0F, 3.0F, -0.1F, false);
+		rightLowerLeg.texOffs(34, 43).addBox(-1.1F, -2.0F, 0.5F, 1.0F, 1.0F, 3.0F, -0.1F, false);
+		rightLowerLeg.texOffs(0, 52).addBox(-1.1F, -1.2F, 2.5F, 1.0F, 2.0F, 1.0F, -0.1F, false);
 	}
 
 	@Override
@@ -273,24 +279,24 @@ public class SoftAndWetModel extends HumanoidStandModel<SoftAndWetEntity> {
 				RotationAngle.fromDegrees(body, 0.0F, 0.0F, 0.0F),
 				RotationAngle.fromDegrees(upperPart, 0.0F, 0.0F, 0.0F),
 				RotationAngle.fromDegrees(torso, 0.0F, 0.0F, 0.0F),
-				RotationAngle.fromDegrees(leftArm, 12.5F, -30F, -15F),
-				RotationAngle.fromDegrees(leftForeArm, -12.5F, 0.0F, 0.0F),
-				RotationAngle.fromDegrees(rightArm, 10F, 30F, 15F),
-				RotationAngle.fromDegrees(rightForeArm, -15F, 0.0F, 0.0F),
-				RotationAngle.fromDegrees(leftLeg, 20F, 0.0F, 0.0F),
-				RotationAngle.fromDegrees(leftLowerLeg, 0.0F, 0.0F, 0.0F),
-				RotationAngle.fromDegrees(rightLeg, 0.0F, 0.0F, 0.0F),
-				RotationAngle.fromDegrees(rightLowerLeg, 5F, 0.0F, 0.0F)
+				RotationAngle.fromDegrees(leftArm, 0.0F, -30F, -10F),
+				RotationAngle.fromDegrees(leftForeArm, -20F, 0.0F, 0.0F),
+				RotationAngle.fromDegrees(rightArm, 0.00F, 30F, 10F),
+				RotationAngle.fromDegrees(rightForeArm, -20F, 0.0F, 0.0F),
+				RotationAngle.fromDegrees(leftLeg, 0.0F, 0.0F, -5F),
+				RotationAngle.fromDegrees(leftLowerLeg, 0.0F, 0.0F, -5F),
+				RotationAngle.fromDegrees(rightLeg, -15F, 0.0F, 10F),
+				RotationAngle.fromDegrees(rightLowerLeg, 40F, 0.0F, 0.0F)
 		});
 	}
 
 	@Override
 	protected ModelPose<SoftAndWetEntity> initIdlePose2Loop() {
 		return new ModelPose<>(new RotationAngle[] {
-				RotationAngle.fromDegrees(leftArm, 7.5F, -30F, -15F),
-				RotationAngle.fromDegrees(leftForeArm, -17.5F, 0.0F, 0.0F),
-				RotationAngle.fromDegrees(rightArm, 12.5F, 30F, 15F),
-				RotationAngle.fromDegrees(rightForeArm, -17.5F, 0.0F, 0.0F)
+				RotationAngle.fromDegrees(leftArm, 0.0F, -30F, -10F),
+				RotationAngle.fromDegrees(leftForeArm, -20F, 0.0F, 0.0F),
+				RotationAngle.fromDegrees(rightArm, 0.00F, 30F, 10F),
+				RotationAngle.fromDegrees(rightForeArm, -20F, 0.0F, 0.0F)
 		});
 	}
 }

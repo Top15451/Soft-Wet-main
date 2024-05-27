@@ -2,8 +2,7 @@ package com.top1545.rotp_sw.init;
 
 import com.github.standobyte.jojo.action.stand.*;
 import com.github.standobyte.jojo.entity.stand.StandPose;
-import com.github.standobyte.jojo.init.ModSounds;
-import com.top1545.rotp_sw.action.stand.SoftAndWetBubbles;
+import com.top1545.rotp_sw.action.stand.*;
 import com.top1545.rotp_sw.entity.stand.stands.SoftAndWetEntity;
 import com.top1545.rotp_sw.RotpSoftAndWet;
 import com.github.standobyte.jojo.action.Action;
@@ -38,9 +37,8 @@ public class InitStands {
                     .barrageHitSound(InitSounds.SOFT_AND_WET_BARRAGE)
                     .standSound(InitSounds.SOFT_AND_WET_ORA_ORA_ORA)));
     
-    public static final RegistryObject<StandEntityHeavyAttack> SOFT_AND_WET_COMBO_PUNCH = ACTIONS.register("soft_and_wet_combo_punch",
-            () -> new StandEntityHeavyAttack(new StandEntityHeavyAttack.Builder()
-                    .resolveLevelToUnlock(1).isTrained()
+    public static final RegistryObject<SoftAndWetFinisher> SOFT_AND_WET_COMBO_PUNCH = ACTIONS.register("soft_and_wet_combo_punch",
+            () -> new SoftAndWetFinisher(new StandEntityHeavyAttack.Builder()
                     .punchSound(InitSounds.SOFT_AND_WET_PUNCH_HEAVY)
                     .standSound(StandEntityAction.Phase.WINDUP, InitSounds.SOFT_AND_WET_ORA_LONG)
                     .partsRequired(StandPart.ARMS)));
@@ -48,14 +46,37 @@ public class InitStands {
     public static final RegistryObject<StandEntityHeavyAttack> SOFT_AND_WET_HEAVY_PUNCH = ACTIONS.register("soft_and_wet_heavy_punch",
             () -> new StandEntityHeavyAttack(new StandEntityHeavyAttack.Builder()
                     .punchSound(InitSounds.SOFT_AND_WET_PUNCH_HEAVY)
-                    .standSound(StandEntityAction.Phase.WINDUP, InitSounds.SOFT_AND_WET_ORA_LONG)
+                    .shout(InitSounds.JOSUKE_PUNCH_HEAVY)
                     .partsRequired(StandPart.ARMS)
                     .setFinisherVariation(SOFT_AND_WET_COMBO_PUNCH)
                     .shiftVariationOf(SOFT_AND_WET_PUNCH).shiftVariationOf(SOFT_AND_WET_BARRAGE)));
 
     public static final RegistryObject<SoftAndWetBubbles> SOFT_AND_WET_BUBBLES = ACTIONS.register("soft_and_wet_bubbles",
-            () -> new SoftAndWetBubbles(new StandEntityAction.Builder().standPerformDuration(30).standRecoveryTicks(20).staminaCostTick(3)
-                    .resolveLevelToUnlock(3).isTrained()
+            () -> new SoftAndWetBubbles(new StandEntityAction.Builder().standPerformDuration(20).standRecoveryTicks(20).staminaCostTick(3).cooldown(60)
+                    .standOffsetFront().standPose(StandPose.RANGED_ATTACK).shout(InitSounds.JOSUKE_BUBBLE_SHOOT).standSound(InitSounds.SOFT_AND_WET_BUBBLES)
+                    .partsRequired(StandPart.ARMS)));
+
+    public static final RegistryObject<SoftAndWetBubblesBlind> SOFT_AND_WET_BUBBLE_BLIND = ACTIONS.register("soft_and_wet_bubble_blind",
+            () -> new SoftAndWetBubblesBlind(new StandEntityAction.Builder().standPerformDuration(20).standRecoveryTicks(20).staminaCostTick(6).cooldown(120)
+                    .resolveLevelToUnlock(2)
+                    .standOffsetFront().standPose(StandPose.RANGED_ATTACK).shout(InitSounds.JOSUKE_BUBBLE_SHOOT).standSound(InitSounds.SOFT_AND_WET_SHIELD_UNSUMMON)
+                    .partsRequired(StandPart.ARMS)));
+
+    public static final RegistryObject<SoftAndWetBubblesStun> SOFT_AND_WET_BUBBLE_STUN = ACTIONS.register("soft_and_wet_bubble_stun",
+            () -> new SoftAndWetBubblesStun(new StandEntityAction.Builder().standPerformDuration(20).standRecoveryTicks(20).staminaCostTick(6).cooldown(120)
+                    .resolveLevelToUnlock(2)
+                    .standOffsetFront().standPose(StandPose.RANGED_ATTACK).shout(InitSounds.JOSUKE_BUBBLE_SHOOT).standSound(InitSounds.SOFT_AND_WET_SHIELD_UNSUMMON)
+                    .partsRequired(StandPart.ARMS)
+                    .shiftVariationOf(SOFT_AND_WET_BUBBLE_BLIND)));
+
+    public static final RegistryObject<SoftAndWetBubblesExplosion> SOFT_AND_WET_BUBBLE_EXPLOSION = ACTIONS.register("soft_and_wet_bubble_explosion",
+            () -> new SoftAndWetBubblesExplosion(new StandEntityAction.Builder().standPerformDuration(10).standRecoveryTicks(20).staminaCostTick(6).cooldown(120)
+                    .resolveLevelToUnlock(3)
+                    .standOffsetFront().standPose(StandPose.RANGED_ATTACK).shout(InitSounds.JOSUKE_BUBBLE_SHOOT).standSound(InitSounds.SOFT_AND_WET_SHIELD_UNSUMMON)
+                    .partsRequired(StandPart.ARMS)));
+
+    public static final RegistryObject<SoftAndWetBubbleWall> SOFT_AND_WET_BUBBLE_WALL = ACTIONS.register("soft_and_wet_bubble_wall",
+            () -> new SoftAndWetBubbleWall(new StandEntityAction.Builder().standPerformDuration(20).standRecoveryTicks(20).staminaCostTick(3).cooldown(60)
                     .standOffsetFront().standPose(StandPose.RANGED_ATTACK).shout(InitSounds.JOSUKE_BUBBLE_SHOOT).standSound(InitSounds.SOFT_AND_WET_BUBBLES)
                     .partsRequired(StandPart.ARMS)));
 
@@ -70,19 +91,22 @@ public class InitStands {
 
                             new StandAction[] {
                                     SOFT_AND_WET_PUNCH.get(),
-                                    SOFT_AND_WET_BARRAGE.get()},
+                                    SOFT_AND_WET_BARRAGE.get(),
+                                    SOFT_AND_WET_BUBBLES.get(),
+                                    SOFT_AND_WET_BUBBLE_BLIND.get(),
+                                    SOFT_AND_WET_BUBBLE_EXPLOSION.get()},
+
                             new StandAction[] {
                                     SOFT_AND_WET_BLOCK.get(),
-                                    SOFT_AND_WET_BUBBLES.get()},
+                                    SOFT_AND_WET_BUBBLE_WALL.get()},
 
                             StandStats.class, new StandStats.Builder()
-                            .tier(5)
-                            .power(10.8)
-                            .speed(13.8)
-                            .range(2.4, 4.8)
-                            .durability(13.8)
-                            .precision(10.8)
-                            .build("Soft And Wet"),
+                            .power(10.0)
+                            .speed(13.0)
+                            .range(2.5, 5.0)
+                            .durability(13.0)
+                            .precision(10.0)
+                            .build("Soft-and-Wet"),
 
                             new StandType.StandTypeOptionals()
                             .addSummonShout(InitSounds.JOSUKE_SOFT_AND_WET)
